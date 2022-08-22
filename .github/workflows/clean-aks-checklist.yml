@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: igorjs/gh-actions-clean-workflow@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN }}
           owner: lgmorand
           repo: aks-checklist
           days_old: ${{ github.event.inputs.days_old || env.SCHEDULED_DAYS_OLD }}
